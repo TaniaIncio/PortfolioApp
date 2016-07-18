@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tincio.portfolioapp.MainActivity"
     android:orientation="vertical"
     android:background="@mipmap/background"
-    >
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+    android:fillViewport="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -22,8 +18,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="10sp"
+                    android:textSize="@dimen/txt_title_app"
+                    android:layout_marginBottom="@dimen/margin_bottom_title_app"
                     android:text="@string/title"/>
             </LinearLayout>
 
@@ -34,36 +30,35 @@
                 android:orientation="vertical">
                 <Button
                     android:text="@string/title_first_app"
-                    android:elevation="5dp"
+                    android:elevation="@dimen/elevation_button_app"
                     android:id="@+id/btn_popular"
                     style="@style/MyButton"/>
                 <Button
                     android:text="@string/title_second_app"
-                    android:elevation="5dp"
+                    android:elevation="@dimen/elevation_button_app"
                     android:id="@+id/btn_stock"
                     style="@style/MyButton"/>
                 <Button
                     android:text="@string/title_third_app"
-                    android:elevation="5dp"
+                    android:elevation="@dimen/elevation_button_app"
                     android:id="@+id/btn_build"
                     style="@style/MyButton"/>
                 <Button
                     android:text="@string/title_fourth_app"
-                    android:elevation="5dp"
+                    android:elevation="@dimen/elevation_button_app"
                     android:id="@+id/btn_makeapp"
                     style="@style/MyButton"/>
                 <Button
                     android:text="@string/title_fiveth_app"
-                    android:elevation="5dp"
+                    android:elevation="@dimen/elevation_button_app"
                     android:id="@+id/btn_go"
                     style="@style/MyButton"/>
                 <Button
                     android:text="@string/title_sixth_app"
-                    android:elevation="5dp"
+                    android:elevation="@dimen/elevation_button_app"
                     android:id="@+id/btn_capstone"
                     style="@style/MyButton"/>
 
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+</ScrollView>
